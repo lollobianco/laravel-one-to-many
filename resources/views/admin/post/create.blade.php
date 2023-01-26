@@ -26,6 +26,16 @@
         @enderror
       </div>
 
+      <div>
+        <label class="form-label">Category</label>
+        <select class="form-control w-100 mb-3" name="category_id">
+          <option selected>Select a Category</option>
+          @foreach ($categories as $category)    
+            <option value="{{$category->id}}">{{$category->name}}</option>
+          @endforeach
+        </select>
+      </div>
+
       <button type="submit" class="btn btn-primary">Create Post</button>
 
     </form>

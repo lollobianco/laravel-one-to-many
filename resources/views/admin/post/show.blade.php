@@ -6,6 +6,8 @@
 
       <h2 class="mb-4">{{$post->title}}</h2>
 
+      <h5 class="mb-4">{{$post->category['name']}}</h5>
+
       <p>{{$post->body}}</p>
 
     </div>

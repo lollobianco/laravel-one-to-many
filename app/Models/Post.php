@@ -14,7 +14,7 @@ class Post extends Model
         'category_id'
     ];
 
-    public function categories(){
+    public function category(){
         //funzione di relazione
         //Il post ha una sola categoria associata
         return $this->belongsTo('App\Models\Category');

@@ -11,10 +11,13 @@
       <div class="card mb-4 bg-secondary text-white" style="width: 28rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">{{ $post->title }}</h5>
-          <p class="card-text">{{ $post->body }}</p>
-          <p class="card-text">{{ $post->category_id }}</p>
-
+          <h4 class="card-title">{{ $post->title }}</h4>
+          @if (is_null($post->category))
+            <p class="card-text">{{ $post->body }}</p>
+          @else
+            <h5 class="card-text">{{ $post->category['name'] }}</h5>
+            <div class="card-text mb-3">{{ $post->body }}</div>
+          @endif
           <div class="d-flex justify-content-between">
 
             <div>
