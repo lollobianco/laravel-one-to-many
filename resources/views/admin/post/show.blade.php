@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="container d-flex flex-column align-items-center">
+    <div class="container d-flex flex-column align-items-center text-white">
 
       <h2 class="mb-4">{{$post->title}}</h2>
 

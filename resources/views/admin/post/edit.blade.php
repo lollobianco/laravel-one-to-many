@@ -2,7 +2,7 @@
 
 @section('content')
 
-  <div class="container p-5">
+  <div class="container p-5 text-white">
 
     <h1 class="text-center p-4">Modify Post</h1>
 
