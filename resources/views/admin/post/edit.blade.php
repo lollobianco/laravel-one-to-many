@@ -32,7 +32,11 @@
       <div>
         <label class="form-label">Category</label>
         <select class="form-control w-100 mb-3" name="category_id">
+          @if (is_null($post->category))
+          <option selected>Select Category</option>
+          @else
           <option selected>{{$post->category['name']}}</option>
+          @endif
           @foreach ($categories as $category)    
             <option value="{{$category->id}}">{{$category->name}}</option>
           @endforeach
