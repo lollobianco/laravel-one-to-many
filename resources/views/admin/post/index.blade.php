@@ -3,8 +3,8 @@
 @section('content')
   <div class="container d-flex flex-column align-items-center">
 
-    <a class="btn btn-primary mb-4" href="{{ route('admin.posts.create') }}">
-      <h4 class="m-0">Create new Post</h4>
+    <a class="btn btn-primary m-5" href="{{ route('admin.posts.create') }}">
+      <h4 class="m-0 p-1">Create new Post</h4>
     </a>
 
     @foreach ($posts as $post)
